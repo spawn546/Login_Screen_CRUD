@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap');
+
+:root {
+	font-size:1rem;
+	font-family: 'Open Sans';
+	--text-primary: white;
+	--text-secondary: #;
+	--bg-primary: #FFA000;
+	--bg-secondary: #343A40 ;
+	 
+}
+
+html, body{
+
+	margin:0;
+	padding: 0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body::-webkit-scrollbar{
+	width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+	background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb{
+	background:#6648b8;
+}
+
+
+
+
+
+
+#container { 
+	
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	margin: 0 auto;
+	box-sizing: border-box;
+ }
+
+
+#mainBanner { 
+	
+	width: 100%;
+	min-width: 25%;
+	height: 50px;
+	border-radius: 4px;
+	background: var(--bg-primary);
+	object-fit:contain;
+}
+
+#mainHub {
+
+	background-size: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	width: 50%;
+	min-width: 25%;
+	height: 600px;
+	margin: 100px;
+	border-radius: 5px;
+	object-fit:contain;
+}
+
+#mainHub h2 {
+
+	text-decoration: none;
+	font-weight:900;
+	margin-top: 40px;
+	font-family: Arial;
+	text-align: center;
+	padding:10px;
+
+}
+
+
+
+#asideBar {
+	align-self: flex-start;
+	margin-left: -30px;
+	width: 15%;
+	height: 400px;
+	padding: 5px;
+	
+
+}
+
+#asideBar h2 {
+	text-decoration: none;
+	font-weight:900;
+	margin-top: 40px;
+	font-family: Arial;
+	text-align: center;
+	padding:10px;
+
+}
+
+#createPost {
+
+	position: fixed;
+	left: 50px;
+	bottom:100px;
+	width: 80px;
+	height: 80px;
+	object-fit: contain;
+	text-align: center;
+
+
+
+}
+
+
+footer {
+
+	position: fixed;
+ 	left: 0;
+  	bottom: 0;
+ 	width: 100%;
+ 	height: 50px;
+ 	background-color: black;
+
+}
+
+
+
+/* CLASSES */ 
+
+.asideList {
+	
+	text-decoration: none;
+	list-style: none;
+	text-align: center;
+	line-height: 10px;
+	
+}
+
+
+.asideLi{
+	border: 1px solid #fff;
+	font-size: 1.5rem;
+	line-height: 50px;
+	width: 100%;
+	height: 50px;
+	background-image: url('nav-bg.png');
+	transition: 0.3s ease
+
+}
+
+.asideLi:hover {
+	transition: 0.3s ease;
+	background-image: url('nav-bg.png') ;
+	background-position: -500PX;
+	cursor: pointer;
+}
+
+
+.asideLi a {
+	text-decoration: none;
+	color: white;
+	font-weight:800;
+
+}
+
+
+.hubSection {
+	box-sizing: border-box;
+	padding: 10px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 1.3rem;
+	width: 150px;
+	height: 150px;
+	object-fit: contain;
+	box-sizing: border-box;
+	border-radius: 5px;
+	background-size:200%;
+	background-image: linear-gradient(to left,#FFC312,#EE5A24,#FFC312);
+	transition: 0.2s ease-in-out;
+	
+}
+
+.hubSection:hover {
+
+	cursor: pointer;
+	background-position: right;
+}
+
+
+.hubSection h5 {
+
+	padding: 10px;
+	font-size: 1rem;
+	text-align: center;
+
+}
+
+@media only screen and (max-width: 1366px) {
+
+	.asideLi {
+		font-weight: 200;
+		font-size: 0.9rem;
+	}
+
+	.hubSection {
+		width: 100px;
+		height: 100px;
+		font-size: 1rem;
+	}
+
+	#pesquisaBtn {
+		font-size: 0.9rem;
+		line-height: 50px;
+		width: 100px;
+		height: 55px;
+	}
+
+}
+
+/* CSS LOGIN SCREEN // CAD SCREEN */
+
+.loglogo {
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	
+
+}
+
+.container-log {
+
+	width: 100%;
+	height: 60vh;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+}
+
+.assideBanner {
+	width:60%;
+	height: 60vh;
+	display: flex;
+	align-content: center;
+
+
+
+}
+
+
+.form-format {
+		box-sizing: border-box;
+		margin-top: 7%;
+		width:40%;
+		height: 400px;
+		
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+
+
+}
+
+
+.input-format{
+	border-color: gray;
+	border-top-style:none;
+ 	border-right-style:none;
+  	border-bottom-style:solid;
+  	border-left-style:none;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	width: 300px;
+	height: 30px;
+	transition: 0.4s ease
+}
+
+
+
+
+.input-format:focus	{
+	outline: none;
+	border-color: orange;	
+}
+
+
+.btn-log{
+	cursor: pointer;
+	width: 300px;
+	height: 50px;
+	border-radius: 30px;
+	border:none;
+	background-color: orange;
+	margin-bottom: 5px;
+	background-image: linear-gradient(to left,#FFC312,#EE5A24,#FFC312);
+	background-size:200%;
+	transition: 0.5s ease-in-out;
+	text-transform: uppercase;
+	color: white;
+	line-height: 50px;
+	font-weight: 600;
+	letter-spacing: 3px;
+
+}
+
+.btn-log:hover {
+
+	background-position:right;
+
+}
+
+
+.cad-btn {
+
+	color: black;
+	align-self: center;
+	text-decoration: none;
+	background-color: 
+	
+}
